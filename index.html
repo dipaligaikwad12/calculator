@@ -14,20 +14,71 @@
         }
         .screen{
             background-color: azure;
-            width:250 ;
+           
             text-align:right;
             display:block ;
             margin: 0 auto;
-            padding: 5px 10px;
-            font-size: 35px;
+            padding: 10px 15px;
+            font-size: 20px;
+            margin-bottom: 20px;
         }
-        
+        .botton-container{
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        }
+        .button{
+            width: 50px;
+            text-align: center;
+            padding: 3px;
+            font-size: 20px;
+            margin:10px;
+            border: 0.5px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover{
+            box-shadow: 0px 0px 3px 2px rgb(119, 118, 118);
+            transition: 0.5s;
+        }
+        .bg-btn{
+            height: 92px;
+            background-color: #ff4d4d;
+        }
+        .btn-color{
+            background-color: #80b3ff;
+        }
     </style>
 </head>
 <body>
     <div class="calculator-container ">
-        <div class="screen">0</div>
-         
+        <input type="text" value="0" class="screen">
+        <div class="botton-container">
+            <button class="button btn-color">AC</button>
+            <button class="button">7</button>
+            <button class="button">4</button>
+            <button class="button">1</button>
+            <button class="button">0</button>
+
+            <button class="button  btn-color">%</button>
+            <button class="button">8</button>
+            <button class="button">5</button>
+            <button class="button">2</button>
+            <button class="button">.</button>
+
+            <button class="button  btn-color">/</button>
+            <button class="button">9</button>
+            <button class="button">6</button>
+            <button class="button">3</button>
+            <button class="button">del</button>
+
+            <button class="button  btn-color">x</button>
+            <button class="button  btn-color">-</button>
+            <button class="button  btn-color">+</button>
+            <button class="button bg-btn">=</button>
+        </div>    
     </div>
 </body>
 </html>
